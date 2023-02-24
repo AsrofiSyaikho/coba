@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-solid.fa-bars {
+    cursor: pointer;
+}
+body {
+    background-color: #3e3e40;
+}
+
+.navbar {
+    margin: 0px;
+    padding: 2%;
+    background-color: #181812;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffff;
+}
+
+.song-list {
+    margin-bottom: 4rem;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #181812;
+    color: #ffff;
+    padding: 10px;
+    height: 4rem;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #3e3e40;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 1.4px solid #ffff;
+}
+
+.fa-bars {
+    color: #ffff;
+}
+
+.fa-magnifying-glass {
+    color: #ffff;
+    margin-right: 7px;
+}
+
+.search-form {
+    border: none;
+    outline: #ffff;
+    background-color: unset;
+    padding: 5px 15px;
+    color: #ffff;
+}
+
+.contain-img {
+    margin: 0px;
+    padding: 25px;
+    padding-bottom: 30px;
+    color: #ffff;
+}
+
+img {
+    max-width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.input {
+    border: none;
+    outline: #ffff;
+    background-color: unset;
+    font-weight: 900;
+    color: #ffff;
+}
+h4, p {
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+
+  .navbar-links {
+    width: 75%;
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-links a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    text-align: left;
+  }
+  .navbar-links a:hover {
+    color: #007bff;
+  }
+  
+  
+.currently-playing {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #181812;
+    color: #ffff;
+    height: 3rem;
+}
+
+.currently-playing__img {
+    display: flex;
+    align-items: center;
+}
+
+.currently-playing__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.currently-playing__info__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.currently-playing__info__artist {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+            .currently-playing__control {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .currently-playing__control i {
+                font-size: 1.5rem;
+                margin: 0 10px;
+                cursor: pointer;
+            }

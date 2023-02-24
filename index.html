@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+    <title>Song</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <i class="fa-solid fa-bars fa-2x" onclick="toggleNav()"></i>
+        <section class="search-container">
+          <form class="search-form">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="search-item" class="input" placeholder="Apa yang ingin anda cari?" size="23" onkeyup="search()">
+          </form>
+        </section>
+      </nav>
+      
+    <div class="song-list" id="song-list">
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+<footer>
+    <div class="currently-playing" style="display:none;">
+        <div class="currently-playing__img">
+            <img src="./assets/img/logo1.png" alt="">
+        </div>
+        <div class="currently-playing__control">
+            <i class="fa-solid fa-step-backward" onclick="prev()"></i>
+            <i class="fa-solid fa-play currently-playing__controls__play" onclick="pauseMusic()"></i>
+            <i class="fa-solid fa-step-forward" onclick="next()"></i>
+        </div>
+        <div class="currently-playing__info">
+            <div class="currently-playing__info__title">
+                <h3>title</h3>
+            </div>
+            <div class="currently-playing__info__artist">
+                <h4>artist</h4>
+            </div>
+            <div class="currently-playing__info__timer">
+                <span class="timer">00:00</span>
+                <span class="duration">00:00</span>
+            </div>
+        </div>
+</footer>
+</html>
